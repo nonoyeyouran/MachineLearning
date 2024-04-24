@@ -5,3 +5,6 @@
 #### 1.1.1 Pandas和Numpy
 ## 2. Tensorflow模型构建篇
 ## 3. Tensorflow模型在线服务篇
+## 4. 常用操作
+### 4.1 Tensor降维
+  tf.squeeze
