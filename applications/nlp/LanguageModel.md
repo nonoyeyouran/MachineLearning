@@ -6,6 +6,6 @@
 ### 3. 大语言模型训练
 ### 4. 大语言模型微调
     大语言模型微调包括指令微调、对齐微调、propmt tuning等<br/>
-4.1 指令微调（instruction tuning）
+#### 4.1 指令微调（instruction tuning）
 
 ### 5. 大语言模型应用
