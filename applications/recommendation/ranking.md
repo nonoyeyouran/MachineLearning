@@ -1,6 +1,6 @@
 推荐排序相关模型文档
 
-- [LLM-Based Rec](#LLM-Based Rec)<br/>
+- [LLM-Based Rec](#LLM-BasedRec)<br/>
 
 
 # LLM-Based Rec
