@@ -23,6 +23,8 @@
     （1）YoutubeDNN
     （2）DSSM
     （3）SDM
+    （4）MIND
+    （5）ComiRec
     
 ## 召回评估指标
 ## 召回常见问题
