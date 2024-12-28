@@ -9,5 +9,20 @@
 ### Tensor降维
   tf.squeeze(input, axis=None, name=None), axis是个list，指定大小为1的那些维度进行缩减
 ### softmax近似计算
-    （1）tf.nn.sampled_softmax_loss
+（1）tf.nn.sampled_softmax_loss
+  ```
+  tf.nn.sampled_softmax_loss(
+    weights,
+    biases,
+    labels,
+    inputs,
+    num_sampled,
+    num_classes,
+    num_true=1,
+    sampled_values=None,
+    remove_accidental_hits=True,
+    seed=None,
+    name='sampled_softmax_loss'
+)
+```
     
