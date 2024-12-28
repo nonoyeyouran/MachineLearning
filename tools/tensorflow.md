@@ -9,12 +9,12 @@
 ### Tensor降维
   tf.squeeze(input, axis=None, name=None), axis是个list，指定大小为1的那些维度进行缩减
 ### softmax近似计算
-（1）tf.nn.sampled_softmax_loss
+（1）tf.nn.sampled_softmax_loss（https://www.tensorflow.org/api_docs/python/tf/nn/sampled_softmax_loss）
   ```
   tf.nn.sampled_softmax_loss(
-    weights,
+    weights, # 一般是token的embedding矩阵
     biases,
-    labels,
+    labels, # 一般是目标token
     inputs,
     num_sampled,
     num_classes,
