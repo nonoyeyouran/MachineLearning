@@ -1,5 +1,7 @@
 - [Tensorflow数据处理篇](#Tensorflow数据处理篇) <br/>
   - [TF常用操作](#TF常用操作) <br/>
+    - [softmax近似计算](#softmax近似计算) <br/>
+    - [tensor指定索引处update](#tensor指定索引处update) <br/>
 
 # Tensorflow2.0 guidebook
 
@@ -29,4 +31,6 @@
     name='sampled_softmax_loss'
 )
 ```
+
+### tensor指定索引处update
     
