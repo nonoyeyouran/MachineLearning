@@ -53,6 +53,7 @@ sequence_length:	1-D int32 vector containing sequence lengths, having size [batc
 beam_width:	An int scalar >= 0 (beam search beam width).
 top_paths:	An int scalar >= 0, <= beam_width (controls output size).
 ```
+关于其源码的文档：https://zhuanlan.zhihu.com/p/39018903
 
 
 
