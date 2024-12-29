@@ -1,4 +1,5 @@
 - [Tensorflow数据处理篇](#Tensorflow数据处理篇) <br/>
+  - [TF常用操作](#TF常用操作) <br/>
 
 # Tensorflow2.0 guidebook
 
@@ -8,7 +9,7 @@
 #### 1.1.1 Pandas和Numpy
 ## 2. Tensorflow模型构建篇
 ## 3. Tensorflow模型在线服务篇
-## 4. 常用操作
+## TF常用操作
 ### Tensor降维
   tf.squeeze(input, axis=None, name=None), axis是个list，指定大小为1的那些维度进行缩减
 ### softmax近似计算
