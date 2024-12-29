@@ -2,6 +2,7 @@
   - [TF常用操作](#TF常用操作) <br/>
     - [softmax近似计算](#softmax近似计算) <br/>
     - [tensor指定索引处update](#tensor指定索引处update) <br/>
+    - [BeamSearch](#BeamSearch) <br/>
 
 # Tensorflow2.0 guidebook
 
@@ -39,6 +40,18 @@ tensor = [0, 0, 0, 0, 0, 0, 0, 0]    # tf.rank(tensor) == 1
 indices = [[1], [3], [4], [7]]       # num_updates == 4, index_depth == 1
 updates = [9, 10, 11, 12]            # num_updates == 4
 print(tf.tensor_scatter_nd_update(tensor, indices, updates))
+```
+
+### BeamSearch
+tf.nn.ctc_beam_search_decoder(https://www.tensorflow.org/api_docs/python/tf/nn/ctc_beam_search_decoder)
+```
+tf.nn.ctc_beam_search_decoder(
+    inputs, sequence_length, beam_width=100, top_paths=1
+)
+inputs:	3-D float Tensor, size [max_time, batch_size, num_classes]. The logits. # max_time一般等于1
+sequence_length:	1-D int32 vector containing sequence lengths, having size [batch_size]. # 表示生成序列的最大长度限制
+beam_width:	An int scalar >= 0 (beam search beam width).
+top_paths:	An int scalar >= 0, <= beam_width (controls output size).
 ```
 
 
