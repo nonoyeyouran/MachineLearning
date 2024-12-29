@@ -33,4 +33,30 @@
 ```
 
 ### tensor指定索引处update
+(1) tf.tensor_scatter_nd_update(https://www.tensorflow.org/api_docs/python/tf/tensor_scatter_nd_update)
+```
+tensor = [0, 0, 0, 0, 0, 0, 0, 0]    # tf.rank(tensor) == 1
+indices = [[1], [3], [4], [7]]       # num_updates == 4, index_depth == 1
+updates = [9, 10, 11, 12]            # num_updates == 4
+print(tf.tensor_scatter_nd_update(tensor, indices, updates))
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
