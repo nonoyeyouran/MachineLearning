@@ -6,4 +6,6 @@
 目前attention网络包括：基础attention, multi-head attention, self-attention.
   ## selfAttention
   ## MultiHeadAttention
+  ## FlashAttention
+  ## PagedAttention
   ## transformer
