@@ -2,7 +2,10 @@
 
 语言模型文档
 ## 预训练语言模型PLM
-    ### Bert
+### Bert
+bert是google提出的一个预训练语言模型，以transformer的encoder结构为基础构建。<br/>
+学习文档：https://zhuanlan.zhihu.com/p/46652512 <br/>
+bert主要用于一些判别性任务，不能用于生成。
 ## 大语言模型（LLM）
 ### 1. 大语言模型（开源和闭源） 
 ### 2. 大语言模型架构
