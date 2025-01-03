@@ -31,6 +31,12 @@ MIND论文：《Multi-Interest Network with Dynamic Routing for Recommendation a
 （2）target-item和兴趣向量的attention帮助着重于item所属兴趣上学习  
 可能的改进点： 
 （1）因为聚类是隐式学习的，依赖用户行为序列中item的共现和用户真实兴趣分布，模型无法保证所学的多个兴趣互不相关[假设真实的不同兴趣是不相关的]，因此可以在目标函数中对兴趣向量施加约束，让各个兴趣向量之间尽可能正交。  
+
+ComiRec论文：《Controllable Multi-Interest Framework for Recommendation》，2019  
+学习文档：https://zhuanlan.zhihu.com/p/568781562  
+要点：  
+（1）提出了另外一个基于multi-head attention的多兴趣提取模块【还有一个就是MIND里面的动态路由，不同之处在于兴趣数K的设置】  
+（2）在线服务时不仅考虑准确性，还考虑多样性，提出了一个综合的线上指标，并使用一个贪心算法来具体实现。  
     
 ## 召回评估指标
 ## 召回常见问题
