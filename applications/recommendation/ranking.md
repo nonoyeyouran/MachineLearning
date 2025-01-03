@@ -21,7 +21,7 @@
 # 多目标排序
   ## ESMM
   论文：《Entire Space Multi-Task Model: An Eﬀective Approach for Estimating Post-Click Conversion Rate》，2018，阿里。<br/>
-  参考文档：https://zhuanlan.zhihu.com/p/57481330 <br/ >
+  参考文档：https://zhuanlan.zhihu.com/p/57481330  
   模型特点：该模型针对具有前后因果逻辑的多个目标任务，例如论文中所诉的ctr和cvr任务，通常在点击之后才会进入是否转化的过程。<br/>
   esmm主要针对cvr目前存在的两个问题进行优化: <br/>
   (1) cvr任务在点击空间学习，假设了用户会点击，但事实我们在推荐给用户数据时用户的点击行为还没有发生，是未知的<br/>
