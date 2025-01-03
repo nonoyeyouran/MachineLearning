@@ -18,7 +18,7 @@
 基本是利用用户属性特征和行为特征来召回，包括I2I类（主要是学习item的embedding，一种是根据item本身的信息学习【适合项目冷启动】，另一种是基于用户行为学习）、U2I类（直接利用用户特征和item特征建模）、U2U2I类等
 #### I2I类
 这一类模型关键在于item embedding的学习，一种是基于item本身的内容学习表示；一种是基于用户行为学习表示；第三种是混合学习（一般在图模型中）。目前主要的学习方式是word2vec和graphEmbedding的方法。  
-（1）word2vec  
+__（1）word2vec__  
 #### U2I类  
 （1）YoutubeDNN  
 （2）DSSM  
