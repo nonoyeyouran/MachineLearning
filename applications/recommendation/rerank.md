@@ -10,7 +10,7 @@ Q代表query，在推荐中可以理解为用户，sim1即query和document的相
 # 重排模型
 ## DLCM
 学习文档：https://zhuanlan.zhihu.com/p/390857478  
-![DLCM](https://github.com/nonoyeyouran/MachineLearning/blob/main/applications/recommendation/pictures/DLCM.png "DLCM")  
+![DLCM](https://github.com/nonoyeyouran/MachineLearning/blob/main/applications/recommendation/pictures/DLCM.jpg "DLCM")  
 要点：  
 （1）需要获取精排最后一层的关于user和item的联合表示，这样重排模型的复杂度才会不低于精排【这一点比较重要】  
 （2）使用listwise的优化目标达到整个序列上的学习（对比point-wise和pair-wise）的学习。  
