@@ -16,6 +16,7 @@
 ### PagedAttention
 ## transformer
 transformer是一种基于multi-head attention的序列学习模型。  
+![transformer]()
 学习资料：https://zhuanlan.zhihu.com/p/338817680  
 # GraphNeuralNetwork
 图上的学习有两种基础方式：Inductive learning和Transductive learning，前者训练、测试和验证集分开，互不影响（不同数据集中的节点之间的边被去掉），后者则在全部数据上学习（包括训练集、测试集和验证集）；前者着重用于会有大量新节点产生的情况，后者着重于固定图结构的情况。  
