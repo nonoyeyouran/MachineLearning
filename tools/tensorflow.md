@@ -1,8 +1,9 @@
-- [Tensorflow数据处理篇](#Tensorflow数据处理篇) <br/>
-  - [TF常用操作](#TF常用操作) <br/>
-    - [softmax近似计算](#softmax近似计算) <br/>
-    - [tensor指定索引处update](#tensor指定索引处update) <br/>
-    - [BeamSearch](#BeamSearch) <br/>
+- [Tensorflow数据处理篇](#Tensorflow数据处理篇)  
+  - [TF常用操作](#TF常用操作)  
+    - [softmax近似计算](#softmax近似计算)   
+    - [tensor指定索引处update](#tensor指定索引处update)  
+    - [BeamSearch](#BeamSearch)
+    - [tensor根据索引获取子tensor](#tensor根据索引获取子tensor)
 
 # Tensorflow2.0 guidebook
 
@@ -43,7 +44,7 @@ print(tf.tensor_scatter_nd_update(tensor, indices, updates))
 ```
 
 ### BeamSearch
-tf.nn.ctc_beam_search_decoder(https://www.tensorflow.org/api_docs/python/tf/nn/ctc_beam_search_decoder)
+tf.nn.ctc_beam_search_decoder(https://www.tensorflow.org/api_docs/python/tf/nn/ctc_beam_search_decoder)  
 ```
 tf.nn.ctc_beam_search_decoder(
     inputs, sequence_length, beam_width=100, top_paths=1
@@ -53,7 +54,11 @@ sequence_length:	1-D int32 vector containing sequence lengths, having size [batc
 beam_width:	An int scalar >= 0 (beam search beam width).
 top_paths:	An int scalar >= 0, <= beam_width (controls output size).
 ```
-关于其源码的文档：https://zhuanlan.zhihu.com/p/39018903
+关于其源码的文档：https://zhuanlan.zhihu.com/p/39018903  
+这个beamsearch的实现只能用于seq2seq模式的模型中，如果decoder对encoder有类似attention的交互，则不能用这个实现，需要自己实现。  
+
+### tensor根据索引获取子tensor
+tf.gather(https://www.tensorflow.org/api_docs/python/tf/gather)  
 
 
 
