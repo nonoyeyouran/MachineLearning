@@ -21,6 +21,8 @@
    - [Colossal-AI](#colossal-ai)
    - [Weights & Biases (W&B)](#weights--biases-wb)
    - [Ray Tune](#ray-tune)
+   - [LLaMA Factory](#llama-factory)
+   - [SwanLab](#swanlab)
 3. [总结](#总结)
 
 ---
@@ -48,6 +50,8 @@
 | Colossal-AI               | LoRA、适配器微调、提示微调、前缀微调                                           | 支持大规模模型的分布式训练                 | [https://www.colossalai.org/](https://www.colossalai.org/)                   |
 | Weights & Biases (W&B)    | 实验跟踪和超参数优化（支持全参数微调、部分参数微调等）                         | 提供实验跟踪和模型管理功能                 | [https://wandb.ai/](https://wandb.ai/)                                       |
 | Ray Tune                  | 超参数优化（支持全参数微调、部分参数微调等）                                   | 提供高效的分布式超参数搜索                 | [https://docs.ray.io/en/latest/tune/](https://docs.ray.io/en/latest/tune/)   |
+| LLaMA Factory             | 全参数微调、LoRA、适配器微调、提示微调、前缀微调                               | 支持100+大模型，提供用户友好的WebUI        | [https://github.com/hiyouga/LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) |
+| SwanLab                   | 实验跟踪和可视化（支持全参数微调、部分参数微调等）                             | 提供实验监控和日志记录功能                 | [https://swanlab.cn](https://swanlab.cn)                                     |
 
 ---
 
@@ -143,6 +147,16 @@
 - **特点：** 提供高效的分布式超参数搜索。
 - **官网：** [https://docs.ray.io/en/latest/tune/](https://docs.ray.io/en/latest/tune/)
 
+### LLaMA Factory
+- **支持的微调方法：** 全参数微调、LoRA、适配器微调、提示微调、前缀微调。
+- **特点：** 支持100+大模型，提供用户友好的WebUI。
+- **官网：** [https://github.com/hiyouga/LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)
+
+### SwanLab
+- **支持的微调方法：** 实验跟踪和可视化（支持全参数微调、部分参数微调等）。
+- **特点：** 提供实验监控和日志记录功能。
+- **官网：** [https://swanlab.cn](https://swanlab.cn)
+
 ---
 
 ## 总结
@@ -154,9 +168,3 @@
 - **前缀微调**：Hugging Face PEFT、OpenDelta 等支持。
 
 ---
-
-## 文件信息
-- **文件名：** model_fine_tuning_tools.md
-- **作者：** DeepSeek-V3
-- **版本：** 1.0
-- **日期：** 2023年10月
