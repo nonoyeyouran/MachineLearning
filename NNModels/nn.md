@@ -3,7 +3,11 @@
 - [序列建模](#序列建模)
   - [attention网络](#attention网络)
   - [transformer](#transformer)  
-- [GraphNeuralNetwork](#GraphNeuralNetwork)  
+- [GraphNeuralNetwork](#GraphNeuralNetwork)
+- [神经网络优化](#神经网络优化)
+  - [参数调优](#参数调优)
+  - [计算加速](#计算加速)
+  - [内存优化](#内存优化)
 
 # 序列建模
 ## attention网络
@@ -25,4 +29,16 @@ transformer是一种基于multi-head attention的序列学习模型。
 ## GraphSage
 基础学习方式：Inductive learning  
 ## GAT
+
+# 神经网络优化
+## 参数调优
+1. 正则化
+  L1、L2正则化是常用的调优方法，它可以约束模型的复杂度，避免模型过大导致过拟合。  
+2. 优化优化算法  
+  机器学习训练中一个重要部分是优化算法，优化算法的改进也可以提升模型效果  
+3. 优化目标函数
+  目标函数直接关系模型学习什么内容，根据任务优化目标函数也可以提升效果  
+4. 超参调整  
+  超参可以控制模型、目标函数，例如初始化方式、网络大小和层数，调整超参也可以提升模型效果  
+5. 改进网络结构或设计新的网络结构  
 
