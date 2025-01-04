@@ -1,4 +1,6 @@
-- [预训练语言模型PLM](#预训练语言模型PLM) <br/>
+- [预训练语言模型PLM](#预训练语言模型PLM)  
+- [大模型训练内存优化](#大模型训练内存优化)
+    - [gradientCheckpointing](#gradientCheckpointing)  
 
 语言模型文档
 ## 预训练语言模型PLM
@@ -19,3 +21,7 @@ bert主要用于一些判别性任务，不能用于生成。
     指令微调通常是要大模型学习具体[指令，输出]的方式来限定模型的行为符合人类指令或特定领域指令。
 #### 4.2 对齐（alignent）
 ### 5. 大语言模型应用
+
+# 大模型训练内存优化
+## gradientCheckpointing
+github:https://github.com/cybertronai/gradient-checkpointing  
