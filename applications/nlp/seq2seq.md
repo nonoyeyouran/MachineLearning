@@ -3,7 +3,7 @@
 ---
 
 ## 一、Seq2seq
-### PointerGeneratorNetwork
+### 1.1 PointerGeneratorNetwork
 **论文：** 《Get To The Point: Summarization with Pointer-Generator Networks》, 2017.ACL. <br/>
 **参考理解文档:** https://zhuanlan.zhihu.com/p/53821581 <br/>
 **github:** https://github.com/abisee/pointer-generator  
