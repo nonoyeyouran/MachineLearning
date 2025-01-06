@@ -32,14 +32,12 @@ MIND论文：《Multi-Interest Network with Dynamic Routing for Recommendation a
 （1）通过动态路由算法实现单条数据中对用户行为序列进行兴趣聚类【单靠这个算法无法真正学习聚类，基础依赖的仍然是整个数据集所有用户的行为序列中item的共现】  
 （2）target-item和兴趣向量的attention帮助着重于item所属兴趣上学习  
 可能的改进点： 
-（1）因为聚类是隐式学习的，依赖用户行为序列中item的共现和用户真实兴趣分布，模型无法保证所学的多个兴趣互不相关[假设真实的不同兴趣是不相关的]，因此可以在目标函数中对兴趣向量施加约束，让各个兴趣向量之间尽可能正交。  
-
+（1）因为聚类是隐式学习的，依赖用户行为序列中item的共现和用户真实兴趣分布，模型无法保证所学的多个兴趣互不相关[假设真实的不同兴趣是不相关的]，因此可以在目标函数中对兴趣向量施加约束，让各个兴趣向量之间尽可能正交。   
 ComiRec论文：《Controllable Multi-Interest Framework for Recommendation》，2019  
 学习文档：https://zhuanlan.zhihu.com/p/568781562  
 要点：  
 （1）提出了另外一个基于multi-head attention的多兴趣提取模块【还有一个就是MIND里面的动态路由，不同之处在于兴趣数K的设置】  
 （2）在线服务时不仅考虑准确性，还考虑多样性，提出了一个综合的线上指标，并使用一个贪心算法来具体实现。  
-
 - 长短期兴趣召回：SDM
 长期兴趣代表用户过去存在但是近期不太表现的兴趣，短期兴趣代表用户近期的兴趣。两个结合召回可以增加召回的多样性，避免过于集中于近期的兴趣导致越来越同质化。  
 SDM论文：《SDM: Sequential Deep Mmatching Model for Online Large-scale Recommender Systemm》  
