@@ -29,7 +29,7 @@ DSSM称作双塔模型，通常它有一个网络用于学习用户表示，一�
 关于DSSM损失函数文档：https://zhuanlan.zhihu.com/p/322065156   
 用于召回时训练模型的一般过程：  
 （1）获取用户特征，item特征（item一般必包含正样本的item，也可以增加负样本的item）  
-（2）将用户特征和item特征分别送入各自的网络（如果有多个item，分别送入item网络，得到各自的item_embedding）
+（2）将用户特征和item特征分别送入各自的网络（如果有多个item，分别送入item网络，得到各自的item_embedding）  
 （3）得到user_embedding和item_embeddings后，一般在batch内负采样，增加随机负样本，如果输入的item也有负样本，可以一起合并  
 （4）根据DSSM的损失函数构建目标函数，通过优化算法学习（损失函数可以参加上诉文档）  
 - 多兴趣召回：MIND、ComiRec  
