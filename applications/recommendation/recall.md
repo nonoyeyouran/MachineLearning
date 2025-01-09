@@ -24,7 +24,9 @@
 - word2vec
 2. U2I类  
 - YoutubeDNN  
-- DSSM   
+- DSSM
+DSSM称作双塔模型，通常它有一个网络用于学习用户表示，一个网络用于学习item表示，最后通过用户和item的相似度来召回结果，也可以用于排序。
+
 - 多兴趣召回：MIND、ComiRec  
 MIND论文：《Multi-Interest Network with Dynamic Routing for Recommendation at Tmall》, 2019  
 学习文档：https://zhuanlan.zhihu.com/p/100779249  
