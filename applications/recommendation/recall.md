@@ -43,8 +43,8 @@ ComiRec论文：《Controllable Multi-Interest Framework for Recommendation》�
 SDM论文：《SDM: Sequential Deep Mmatching Model for Online Large-scale Recommender Systemm》  
 学习文档：https://zhuanlan.zhihu.com/p/137775247  
 要点：  
-（1）长期兴趣使用用户近期之前的行为数据；在item的不同属性上进行更高的抽象。
-（2）使用用户embedding对不同属性（兴趣）向量进行attention，找到用户侧重的属性  
+（1）长期兴趣使用用户近期之前的行为数据；在item的不同属性上进行更高的抽象。  
+（2）使用用户embedding对不同属性（兴趣）向量进行attention，找到用户侧重的属性   
 （3）使用gate机制融合长短期兴趣  
     
 # 召回评估指标
