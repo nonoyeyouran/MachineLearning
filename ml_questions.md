@@ -1,9 +1,9 @@
 # 机器学习常见问题
 ---
 
-[特征编码相关问题](#特征编码相关问题)   
-  [one-hot vs embedding](#onehot-vs-embedding)   
-[连续特征离散化](#连续特征离散化) 
+- [特征编码相关问题](#特征编码相关问题)   
+  - [one-hot vs embedding](#onehot-vs-embedding)   
+- [连续特征离散化](#连续特征离散化) 
 
 
 ---
