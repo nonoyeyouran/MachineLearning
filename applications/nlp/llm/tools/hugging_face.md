@@ -9,16 +9,16 @@
 
 ## 大语言模型使用guide
 ## hugging face的预训练模型离线下载，使用时本地加载
-步骤： 
-访问 Hugging Face Model Hub：https://huggingface.co/models。   
-搜索目标模型（如 gpt2、mistralai/Mixtral-8x7B-Instruct-v0.1）。  
-点击模型页面右侧的“Files and versions”标签。  
-下载必要文件：  
-config.json：模型配置文件。  
-pytorch_model.bin 或 model.safetensors：权重文件。  
-tokenizer.json / vocab.txt / tokenizer_config.json：分词器文件。  
-将文件放入本地文件夹（如 ./mistral_model）。  
-离线加载：  
+步骤:  
+1. 访问 Hugging Face Model Hub：https://huggingface.co/models。   
+2. 搜索目标模型（如 gpt2、mistralai/Mixtral-8x7B-Instruct-v0.1）。  
+3. 点击模型页面右侧的“Files and versions”标签。  
+4. 下载必要文件：  
+- config.json：模型配置文件。  
+- pytorch_model.bin 或 model.safetensors：权重文件。  
+- tokenizer.json / vocab.txt / tokenizer_config.json：分词器文件。  
+5. 将文件放入本地文件夹（如 ./mistral_model）。  
+6. 离线加载：  
 ```
 python
 from transformers import AutoModelForCausalLM, AutoTokenizer
