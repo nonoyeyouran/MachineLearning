@@ -177,9 +177,3 @@ Prompt工程是指通过设计和优化输入提示（Prompt），引导AI模型
 - 通过不断迭代优化Prompt，可以实现更精准的任务控制和更高质量的模型输出。
 
 ---
-
-## 文件信息
-- **文件名：** prompt_engineering_and_structure_guide.md
-- **作者：** DeepSeek-V3
-- **版本：** 1.0
-- **日期：** 2023年10月
