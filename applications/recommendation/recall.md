@@ -34,7 +34,7 @@ item-base、user-base、矩阵分解
   这一类模型关键在于item embedding的学习，一种是基于item本身的内容学习表示；一种是基于用户行为学习表示；第三种是混合学习（一般在图模型中）。目前主要的学习方式是word2vec和graphEmbedding的方法。
   - 1）基于矩阵分解：SVD、ALS、PMF
   - 2）word2vec、GRU4Rec、Bert4Rec
-  - 3) graphEmbedding:graphsage、GCN
+  - 3）graphEmbedding:graphsage、GCN
   - 4）深度模型：NCF、DSSM(可学习用户和item表示)、AE(自编码器)、兴趣模型（MIND、Comirec）
   - 5）预训练模型：pre-train LM、pre-train Image Model
   - 6）TF_IDF + 降维
