@@ -32,14 +32,14 @@ item-base、user-base、矩阵分解
 基本是利用用户属性特征和行为特征来召回，包括I2I类（主要是学习item的embedding，一种是根据item本身的信息学习【适合项目冷启动】，另一种是基于用户行为学习）、U2I类（直接利用用户特征和item特征建模）、U2U2I类等
 - I2I类  
   这一类模型关键在于item embedding的学习，一种是基于item本身的内容学习表示；一种是基于用户行为学习表示；第三种是混合学习（一般在图模型中）。目前主要的学习方式是word2vec和graphEmbedding的方法。
-  1）基于矩阵分解：SVD、ALS、PMF
-  2）word2vec、GRU4Rec、Bert4Rec
-  3) graphEmbedding:graphsage、GCN
-  4）深度模型：NCF、DSSM(可学习用户和item表示)、AE(自编码器)、兴趣模型（MIND、Comirec）
-  5）预训练模型：pre-train LM、pre-train Image Model
-  6）TF_IDF + 降维
-  7）lightFM
-  8）基于知识图谱
+  - 1）基于矩阵分解：SVD、ALS、PMF
+  - 2）word2vec、GRU4Rec、Bert4Rec
+  - 3) graphEmbedding:graphsage、GCN
+  - 4）深度模型：NCF、DSSM(可学习用户和item表示)、AE(自编码器)、兴趣模型（MIND、Comirec）
+  - 5）预训练模型：pre-train LM、pre-train Image Model
+  - 6）TF_IDF + 降维
+  - 7）lightFM
+  - 8）基于知识图谱
 2. U2I类  
 - YoutubeDNN  
 - DSSM  
