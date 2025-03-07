@@ -28,7 +28,7 @@
 - MBA：mini-batch Aware Regularization，只对在batch样本中出现过的ID类特征进行L2正则
 - 设计了一种新的激活函数Data Adaptive Activation Function（Dice），网络送入激活函数前的值的分布不一定是以0为中心的分布，所以需要根据batch内数据进行估计和矫正  
 ## 3. 多目标排序
-多目标学习即同时对多个目标建模，但是底部会不同程度地分享信息，从而达到共同进步的目的，也就是相互辅助学习。当前多目标学习架构主要又share-bottom、MOE(mixtureof expert)、MMOE（multi-gate mixture of expert）、CGC（Customized Gate Control Model）、ESMM（针对具有顺序性的任务）。
+多目标学习即同时对多个目标建模，但是底部会不同程度地分享信息，从而达到共同进步的目的，也就是相互辅助学习。当前多目标学习架构主要又share-bottom、MOE(mixture of expert)、MMOE（multi-gate mixture of expert）、CGC（Customized Gate Control Model）、ESMM（针对具有顺序性的任务）。
 ### 3.1 ESMM
 论文：《Entire Space Multi-Task Model: An Eﬀective Approach for Estimating Post-Click Conversion Rate》，2018，阿里。  
 参考文档：https://zhuanlan.zhihu.com/p/57481330   
