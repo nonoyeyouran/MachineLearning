@@ -101,6 +101,10 @@ trainer.train()
 # 7. 评估模型
 trainer.evaluate()
 ```
+如果GPU内存不足，可以尝试以下几个操作：  
+（1）减少batch大小  
+（2）减少输入最大长度  
+（3）清空一些预分配的内存：torch.cuda.empty_cache()
 
 
 
