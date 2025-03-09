@@ -3,10 +3,6 @@
 ## 目录
 1. [全参数微调（Full Fine-tuning）](#全参数微调full-fine-tuning)
 2. [部分参数微调（Partial Fine-tuning）](#部分参数微调partial-fine-tuning)
-3. [适配器微调（Adapter Fine-tuning）](#适配器微调adapter-fine-tuning)
-4. [提示微调（Prompt Tuning）](#提示微调prompt-tuning)
-5. [前缀微调（Prefix Tuning）](#前缀微调prefix-tuning)
-6. [低秩适应（LoRA, Low-Rank Adaptation）](#低秩适应lora-low-rank-adaptation)
 7. [知识蒸馏（Knowledge Distillation）](#知识蒸馏knowledge-distillation)
 8. [持续学习（Continual Learning）](#持续学习continual-learning)
 9. [少样本微调（Few-shot Fine-tuning）](#少样本微调few-shot-fine-tuning)
@@ -28,8 +24,18 @@
 - **适用场景：** 数据量较大、计算资源充足的任务。
 
 ---
-
 ## 部分参数微调（Partial Fine-tuning）
+### Head-only Fine-tuning（仅微调头部）
+- **方法：** 冻结预训练模型的主体（Backbone，如 Transformer 的所有层），仅微调任务特定的头部（Head）。头部通常是一个小型分类器（如线性层或 MLP），接在模型最后一层输出后。
+- **优点：**
+  - 计算成本较低。
+  - 不改变预训练知识，仅适配任务输出。
+- **缺点：**
+  - 无法调整模型内部表示，效果受限。
+- **适用场景：** 数据量较少、计算资源有限的任务。
+
+
+### 层级微调（layer-wise Fine-tuning）
 - **方法：** 只微调模型的某些层（如最后几层），而冻结其他层的参数。
 - **优点：**
   - 计算成本较低。
@@ -38,9 +44,8 @@
   - 可能无法充分利用预训练模型的知识。
 - **适用场景：** 数据量较少、计算资源有限的任务。
 
----
 
-## 适配器微调（Adapter Fine-tuning）
+### 适配器微调（Adapter Fine-tuning）
 - **方法：** 在模型的每一层中插入小型适配器模块（Adapter），只微调这些适配器，而冻结原始模型的参数。
 - **优点：**
   - 计算成本低，参数效率高。
@@ -49,9 +54,8 @@
   - 需要设计适配器结构。
 - **适用场景：** 多任务学习、资源受限的场景。
 
----
 
-## 提示微调（Prompt Tuning）
+### 提示微调（Prompt Tuning）
 - **方法：** 通过设计提示词（Prompt）来引导模型生成目标输出，而不直接修改模型参数。
 - **优点：**
   - 无需修改模型参数，计算成本低。
@@ -60,9 +64,8 @@
   - 提示词设计需要技巧。
 - **适用场景：** 少样本或零样本学习任务。
 
----
 
-## 前缀微调（Prefix Tuning）
+### 前缀微调（Prefix Tuning）
 - **方法：** 在输入前添加可学习的“前缀”向量，只微调这些前缀向量，而冻结模型的其他参数。
 - **优点：**
   - 参数效率高，计算成本低。
@@ -71,9 +74,8 @@
   - 需要设计前缀结构。
 - **适用场景：** 生成任务（如文本生成、对话系统）。
 
----
 
-## 低秩适应（LoRA, Low-Rank Adaptation）
+### 低秩适应（LoRA, Low-Rank Adaptation）
 - **方法：** 在模型的权重矩阵中引入低秩分解，只微调这些低秩矩阵，而冻结原始权重。
 - **优点：**
   - 参数效率高，计算成本低。
@@ -81,6 +83,18 @@
 - **缺点：**
   - 需要设计低秩分解结构。
 - **适用场景：** 大规模模型的轻量级微调。
+
+
+### BitFit (Bias-only Fine-tuning)
+- **方法：** 仅微调模型中的偏置项（Bias Terms），冻结权重矩阵。Transformer 中偏置项包括线性层、LayerNorm 等。
+- **优点：**
+  - 极轻量，计算成本低。
+  - 保留预训练权重，适合小数据集。
+- **缺点：**
+  - 表达能力有限，效果不如 LoRA 或 Adapter。
+- **适用场景：** 小规模任务适配：如分类、NER
+
+
 
 ---
 
