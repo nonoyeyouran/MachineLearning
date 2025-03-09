@@ -95,7 +95,7 @@
 - **适用场景：** 小规模任务适配：如分类、NER
 
 
-
+![PartFineTuning](https://github.com/nonoyeyouran/MachineLearning/blob/main/applications/recommendation/pictures/MMR.png "MMR")  
 ---
 
 ## 知识蒸馏（Knowledge Distillation）
