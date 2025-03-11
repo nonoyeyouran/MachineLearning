@@ -1,14 +1,16 @@
 # hugging face使用手册
 
 ## 目录
-1. [大语言模型使用guide](#大语言模型使用guide)
+1. [huggingface使用本地模型](#huggingface使用本地模型)  
+2. [微调](#微调)  
+   - [全量微调](#全量微调)
+4. 
 
 
 ---
 
 
-## 大语言模型使用guide
-## hugging face的预训练模型离线下载，使用时本地加载
+## huggingface使用本地模型
 步骤:  
 1. 访问 Hugging Face Model Hub：https://huggingface.co/models。   
 2. 搜索目标模型（如 gpt2、mistralai/Mixtral-8x7B-Instruct-v0.1）。  
