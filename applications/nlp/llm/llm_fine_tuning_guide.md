@@ -53,7 +53,7 @@
 - **缺点：**
   - 需要设计适配器结构。
 - **适用场景：** 多任务学习、资源受限的场景。
-
+![PartFineTuning](https://github.com/nonoyeyouran/MachineLearning/blob/main/applications/nlp/pictures/partFineTuning.png "PartFineTuning") 
 
 ### 提示微调（Prompt Tuning）
 - **方法：** 通过设计提示词（Prompt）来引导模型生成目标输出，而不直接修改模型参数。
