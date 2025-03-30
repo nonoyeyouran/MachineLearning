@@ -61,7 +61,7 @@
 - **示例**：在新闻推荐中，确保列表中既有热门新闻，也有不同领域的文章。  
 - **公式**（MMR简述）：  
   \[
-  $\text{Score}(item)$ = $\lambda \cdot \text{Relevance}(item)$ - (1-\lambda) \cdot \text{Similarity}(item, selected_items)
+  $\text{Score}(item)$ = $\lambda \cdot \text{Relevance}(item)$ - $(1-\lambda) \cdot \text{Similarity}(item, selected_items)$
   \]
   其中，\($\lambda\)$ 是相关性和多样性的权重因子。  
 - **适用场景**：避免推荐过于同质化。
