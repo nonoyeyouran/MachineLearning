@@ -26,20 +26,20 @@
      \text{sim}(u, v) = \frac{\sum_{i \in I} r_{u,i} \cdot r_{v,i}}{\sqrt{\sum_{i \in I} r_{u,i}^2} \cdot \sqrt{\sum_{i \in I} r_{v,i}^2}}
      \]$
    - 皮尔逊相关系数：  
-     \[
+     $\[
      \text{sim}(u, v) = \frac{\sum_{i \in I} (r_{u,i} - \bar{r}_u)(r_{v,i} - \bar{r}_v)}{\sqrt{\sum_{i \in I} (r_{u,i} - \bar{r}_u)^2} \cdot \sqrt{\sum_{i \in I} (r_{v,i} - \bar{r}_v)^2}}
-     \]
+     \]$
    - Jaccard相似度（隐式反馈）：  
-     \[
+     $\[
      \text{sim}(u, v) = \frac{|I_u \cap I_v|}{|I_u \cup I_v|}
-     \]
+     \]$
 3. **选择邻居**：
    - 根据相似度排序，选择Top-K邻居。
 4. **生成推荐**：
    - 预测得分：  
-     \[
+     $\[
      \hat{r}_{u,i} = \bar{r}_u + \frac{\sum_{v \in N(u)} \text{sim}(u, v) \cdot (r_{v,i} - \bar{r}_v)}{\sum_{v \in N(u)} |\text{sim}(u, v)|}
-     \]
+     \]$
    - 选择得分最高的物品召回。
 
 ### 实现工具
@@ -68,22 +68,22 @@
    - 同基于用户的方法。
 2. **计算物品相似度**：
    - 余弦相似度：  
-     \[
+     $\[
      \text{sim}(i, j) = \frac{\sum_{u \in U} r_{u,i} \cdot r_{u,j}}{\sqrt{\sum_{u \in U} r_{u,i}^2} \cdot \sqrt{\sum_{u \in U} r_{u,j}^2}}
-     \]
+     \]$
    - 调整余弦相似度：  
-     \[
+     $\[
      \text{sim}(i, j) = \frac{\sum_{u \in U} (r_{u,i} - \bar{r}_u)(r_{u,j} - \bar{r}_u)}{\sqrt{\sum_{u \in U} (r_{u,i} - \bar{r}_u)^2} \cdot \sqrt{\sum_{u \in U} (r_{u,j} - \bar{r}_u)^2}}
-     \]
+     \]$
    - Jaccard相似度（隐式反馈）：  
-     \[
+     $\[
      \text{sim}(i, j) = \frac{|U_i \cap U_j|}{|U_i \cup U_j|}
-     \]
+     \]$
 3. **生成推荐**：
    - 预测得分：  
-     \[
+     $\[
      \hat{r}_{u,i} = \frac{\sum_{j \in I_u} \text{sim}(i, j) \cdot r_{u,j}}{\sum_{j \in I_u} |\text{sim}(i, j)|}
-     \]
+     \]$
    - 选择得分最高的物品召回。
 
 ### 实现工具
