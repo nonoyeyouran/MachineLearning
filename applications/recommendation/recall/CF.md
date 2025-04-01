@@ -22,9 +22,9 @@
    - 行表示用户，列表示物品，矩阵元素为交互数据（如评分、点击次数，0表示无交互）。
 2. **计算用户相似度**：
    - 余弦相似度：  
-     \[
+     $\[
      \text{sim}(u, v) = \frac{\sum_{i \in I} r_{u,i} \cdot r_{v,i}}{\sqrt{\sum_{i \in I} r_{u,i}^2} \cdot \sqrt{\sum_{i \in I} r_{v,i}^2}}
-     \]
+     \]$
    - 皮尔逊相关系数：  
      \[
      \text{sim}(u, v) = \frac{\sum_{i \in I} (r_{u,i} - \bar{r}_u)(r_{v,i} - \bar{r}_v)}{\sqrt{\sum_{i \in I} (r_{u,i} - \bar{r}_u)^2} \cdot \sqrt{\sum_{i \in I} (r_{v,i} - \bar{r}_v)^2}}
