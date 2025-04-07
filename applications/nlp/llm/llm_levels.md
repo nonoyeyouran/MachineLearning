@@ -35,14 +35,14 @@
 以上是大模型应用的常用技术
 
 
---
+---
 ## 推理能力
 - Chain-of-Thought (CoT)：引导模型逐步推理。
 - Self-Consistency：多次生成答案并选择一致性高的结果。
 - Autoregressive Enhancement：自我迭代优化输出。
 
 
---
+---
 ## 大模型训练或推理效率优化
 - MoE（Mixture of Experts）：动态选择专家子模型，降低计算量。
 - 量化（Quantization）：权重转为低精度，减少存储和推理成本。
@@ -50,7 +50,7 @@
 - 模型蒸馏（Model Distillation）：大模型压缩到小模型，注重整体性能迁移。
 
 
---
+---
 ## agent
 ## 多模态
 
